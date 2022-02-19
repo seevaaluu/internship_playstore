@@ -46,6 +46,7 @@ class GamesController extends Controller
 
         $game = new Game;
         $game->name = $request->name;
+        $game->description = $request->description;
         $game->platform = $request->platform;
         $game->price = $request->price;
         $game->save();
@@ -94,6 +95,7 @@ class GamesController extends Controller
 
         $game = Game::findOrFail($id);
         $game->name = $request->name;
+        $game->description = $request->description;
         $game->platform = $request->platform;
         $game->price = $request->price;
         $game->save();

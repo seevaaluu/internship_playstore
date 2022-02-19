@@ -28,6 +28,11 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="exampleInputEmail1">Descripcion</label>
+                        <input value="{{ $game->description }}" type="text" name="description" class="form-control"  placeholder="Escribe el valor">
+                    </div>
+
+                    <div class="form-group">
                         <label for="exampleInputEmail1">Plataforma</label>
                         <select required value="{{  $game->platform }}" class="form-control" name="platform">
                             <option value="Playstation">Playstation</option>
