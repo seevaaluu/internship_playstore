@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+
 use App\Game;
 use App\User;
 
@@ -41,7 +43,7 @@ class GamesController extends Controller
         $request->validate([
             'name' => 'required',
             'platform' => 'required',
-            'price' => 'required|numeric|min:1'
+            'price' => 'required|numeric|min:1',
         ]);
 
         $game = new Game;

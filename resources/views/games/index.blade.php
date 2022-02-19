@@ -38,7 +38,7 @@
                     @foreach($games as $key => $game)
                         <div class="col-md-4">
                             <div class="card" style="width: 18rem;">
-                                <img src="https://images.vexels.com/media/users/3/153079/isolated/preview/eec464c3ad74f3f210bb2e3fcfa63ed1-icono-plano-de-caja-de-disco-compacto.png" class="card-img-top" alt="...">
+                                <img src="{{ $game->cover }}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ $game->name }}</h5>
                                     <p class="card-text">{{ $game->description }}</p>
